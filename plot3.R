@@ -1,4 +1,4 @@
-png("plot3.png")
+png("plot3.png", width = 480, height = 480, bg = "transparent")
 
 plot(hpc$DateTime,
      hpc$Sub_metering_1,

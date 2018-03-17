@@ -41,7 +41,7 @@ hpc <- read.csv("household_power_consumption.txt",
                 nrows = 69517 - 66637,
                 header = FALSE)
 
-png("plot1.png")
+png("plot1.png", width = 480, height = 480, bg = "transparent")
 
 hist(hpc$Global_active_power, 
      xlab = "Global Active Power (kilowatts)", 

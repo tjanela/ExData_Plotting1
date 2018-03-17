@@ -14,7 +14,7 @@ hpc <- mutate(hpc, DateTime = make_datetime(year = year(Date),
                                             tz = "UTC"))
 
 
-png("plot2.png")
+png("plot2.png", width = 480, height = 480, bg = "transparent")
 
 plot(hpc$DateTime,
      hpc$Global_active_power,

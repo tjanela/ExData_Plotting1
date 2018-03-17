@@ -1,4 +1,4 @@
-png("plot4.png")
+png("plot4.png", width = 480, height = 480, bg = "transparent")
 
 # Specify Multi Figure Row Wise
 par(mfrow = c(2, 2))
