@@ -9,10 +9,13 @@ download.file("https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_p
 unzip("household_power_consumption.zip")
 
 # Enable a custom format for parsing the date 
-setAs ("character","hpcDate", 
-       function(from) as.Date(from, format = "%d/%m/%Y"))  
+setAs ("character", 
+       "hpcDate", 
+       function(from) as.Date(from, format = "%d/%m/%Y"))
+
 # Enable a custom format for parsing the time 
-setAs ("character","hpcTime", 
+setAs ("character",
+       "hpcTime", 
        function(from) as.POSIXct(strptime(from, "%H:%M:%S")))   
 
 # Define colClasses to speed up the import using the custom formats defined above

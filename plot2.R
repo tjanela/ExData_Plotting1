@@ -11,14 +11,14 @@ hpc <- mutate(hpc, DateTime = make_datetime(year = year(Date),
                                             hour = hour(Time), 
                                             min = minute(Time), 
                                             sec = second(Time), 
-                                            tz="UTC"))
+                                            tz = "UTC"))
 
 
 png("plot2.png")
 
 plot(hpc$DateTime,
      hpc$Global_active_power,
-     type="l",
+     type = "l",
      xlab = "",
      ylab = "Global Active Power (kilowatts)")
 
